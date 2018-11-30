@@ -1,0 +1,72 @@
+<header>
+  <h1 class = "short-listed">LOGO</h1>
+</header>
+<div class="card-body text-center individual-pic">
+<img src="userPhoto.jpg" width = '50' height='50'>
+<div>
+  <p id= "val" class="card-text"> {{model.userRecord.login}}{{model.userRecord.id}}</p>
+  <p id= "val" class="card-text">Site Admin</p>
+</div>
+<button type="button" class="back-button" {{action 'onClickBack'}}> Back </button>
+
+</div>
+<hr>
+<table>
+  <tr>
+    <td>"login":</td>
+    <td>"{{model.userRecord.login}}",</td>
+  </tr>
+  <tr>
+    <td>"id":</td>
+    <td>"{{model.userRecord.id}}",</td>
+  </tr>
+  <tr>
+    <td>"node_id":</td>
+    <td>"{{model.userRecord.node_id}}",</td>
+  </tr>
+  <tr>
+    <td>"avatar_url":</td>
+    <td>"{{model.userRecord.avatar_url}}",</td>
+  </tr>
+  <tr>
+    <td>"url":</td>
+    <td>"{{model.userRecord.url}}",</td>
+  </tr>
+  <tr>
+    <td>"html_url":</td>
+    <td>"{{model.userRecord.html_url}}",</td>
+  </tr>
+
+    <tr>
+      <td>"subscriptions_url":</td>
+      <td>"{{model.userRecord.subscriptions_url}}",</td>
+    </tr>
+    <tr>
+      <td>"organizations_url":</td>
+      <td>"{{model.userRecord.organizations_url}}",</td>
+    </tr>
+    <tr>
+      <td>"repos_url":</td>
+      <td>"{{model.userRecord.repos_url}}",</td>
+    </tr>
+    <tr>
+      <td>"site_admin":</td>
+      <td>"{{model.userRecord.site_admin}}",</td>
+    </tr>
+    <tr>
+      <td>"name":</td>
+      <td>"{{model.userRecord.name}}",</td>
+    </tr>
+    <tr>
+      <td>"company":</td>
+      <td>"{{model.userRecord.company}}",</td>
+    </tr>
+    <tr>
+      <td>"blog":</td>
+      <td>"{{model.userRecord.blog}}",</td>
+    </tr>
+    <tr>
+      <td>"location":</td>
+      <td>"{{model.userRecord.location}}",</td>
+    </tr>
+</table>

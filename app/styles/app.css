@@ -1,0 +1,64 @@
+
+.individual-pic {
+    display: inline-flex;
+    margin-left: 350px;
+}
+
+.back-button{
+width: 60px;
+height: 28px;
+background: darkgray;
+margin-left: 350px;
+margin-top: auto;
+}
+
+.card-layout{
+width: 10em;
+margin: 65px;
+border: 2px solid grey;
+padding: 15px;
+}
+
+.user-photo{
+   padding: 2.5em;
+ }
+
+
+.card-columns.card-count {
+	column-count: 4;
+}
+
+
+.short-listed {
+	border: 2px solid darkgrey;
+    background: darkgray;
+}
+
+.parent-card {
+    overflow: scroll;
+    width: 750px;
+    margin-left: 200px;
+}
+
+.searchbox {
+    width: 50%;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+table {
+  margin: auto;
+ border: 1px solid darkgray;
+    background: lightgrey;
+}
+tr {
+  border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgrey;
+}
+td {
+      border: 1px solid darkgrey;
+}
+
+hr {
+  width; 50%
+}

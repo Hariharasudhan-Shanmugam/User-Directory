@@ -1,0 +1,13 @@
+<div class="card-columns card-count parent-card">
+  <div class="card bg-primary">
+    <div class="card-body text-center">
+    <img src="userPhoto.jpg" width = '50' height='50'>
+      <p id= "val" class="card-text"> Username {{users.id}}</p>
+      <p id= "val" class="card-text"> Site Admin </p>
+      <button type="button" class="header_back_Search" {{action 'onToShortlist' users}}>Add</button>
+
+      <button type="button" class="header_back_Search" {{action 'onCancel'}}>Cancel</button>
+
+    </div>
+  </div>
+</div>
