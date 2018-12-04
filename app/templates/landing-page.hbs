@@ -5,29 +5,16 @@
 {{input class="searchbox" type="search" placeholder='Search Here...'}}
 </div>
 
-{{log "model.userData " model.userData}}
+
 {{list-of-users userData = model.userData onToShortlistRoute='onToShortlistRoute'
 onClickofUser= 'onClickofUser'
 }}
+<p class = "short-listed footer-text">Shortlisting</p>
+{{log model.userShrtData}}
+{{list-of-users userData = model.userShrtData title = "shortlist" onRmvShortlistRoute='onRmvShortlistRoute'
+onClickofUser= 'onClickofUser'
+}}
 
-<div class= "short-listed">
-<h4> Shortlisted</h4>
-</div>
-<div class="card">
-  <div class="card-body text-center">
-    <div {{action 'onClickofUser' users}}>
-  <img src="userPhoto.jpg" width = '50' height='50'>
-    <p id= "val" class="card-text"> {{users.login}}{{users.id}}</p>
-    {{#if (eq users.site_admin true)}}
-    <p id= "val" class="card-text">Site Admin</p>
-    {{/if}}
-  </div>
-
-  {{log "short" model.userShrtData}}
-    <button type="button" class="header_back_Search" {{action 'onToShortlist' users}}>Remove</button>
-
-    {{log "short" model.userShrtData}}
-    <button type="button" class="header_back_Search" {{action 'onCancel'}}>Cancel</button>
-
-  </div>
-</div>
+<footer>
+  <p class = "short-listed footer-text">Copyright Valuelabs LLP</p>
+</footer>

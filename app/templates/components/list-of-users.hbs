@@ -1,6 +1,4 @@
-
 <div class="card-columns card-count parent-card">
-
 {{#each userData as |users|}}
   <div class="card">
     <div class="card-body text-center">
@@ -11,8 +9,11 @@
       <p id= "val" class="card-text">Site Admin</p>
       {{/if}}
     </div>
-      <button type="button" class="header_back_Search" {{action 'onToShortlist' users}}>Add</button>
-
+        {{#if (eq title "shortlist")}}
+      <button type="button" class="header_back_Search" {{action 'onRmvShortlistRoute' users}}>Remove</button>
+      {{else}}
+    <button type="button" class="header_back_Search" {{action 'onToShortlist' users}}>Add</button>
+      {{/if}}
       <button type="button" class="header_back_Search" {{action 'onCancel'}}>Cancel</button>
 
     </div>

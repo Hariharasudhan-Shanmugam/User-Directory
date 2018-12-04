@@ -62,3 +62,11 @@ td {
 hr {
   width; 50%
 }
+
+footer {
+  margin-top: 20px
+}
+
+.footer-text{
+text-align: center;
+}
