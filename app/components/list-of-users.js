@@ -8,7 +8,7 @@ export default Component.extend({
 	actions: {
 
 		onToShortlist:function(users) {
-			this.sendAction('onToShortlistRoute',users);
+			this.onToShortlist(users);
 		},
 		onRmvShortlistRoute:function(users) {
 			this.sendAction('onRmvShortlistRoute',users);

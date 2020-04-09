@@ -1,20 +1,20 @@
-<div class="card-columns card-count parent-card">
+<div class="card-columns card-count parent-card col-3 col-s-3">
 {{#each userData as |users|}}
-  <div class="card">
+  <div class="card" style="padding-top: 5px;">
     <div class="card-body text-center">
       <div {{action 'onClickofUser' users}}>
-    <img src="userPhoto.jpg" width = '50' height='50'>
+    <img src="userPhoto.jpg" width = '50' height='50' style="padding-left: 18px;">
       <p id= "val" class="card-text"> {{users.login}}{{users.id}}</p>
       {{#if (eq users.site_admin true)}}
       <p id= "val" class="card-text">Site Admin</p>
       {{/if}}
     </div>
         {{#if (eq title "shortlist")}}
-      <button type="button" class="header_back_Search" {{action 'onRmvShortlistRoute' users}}>Remove</button>
+      <button type="button" class="add-button" {{action 'onRmvShortlistRoute' users}}>Remove</button>
       {{else}}
-    <button type="button" class="header_back_Search" {{action 'onToShortlist' users}}>Add</button>
+    <button type="button" class="add-button" {{action 'onToShortlist' users}}>Add</button>
       {{/if}}
-      <button type="button" class="header_back_Search" {{action 'onCancel'}}>Cancel</button>
+      <button type="button" class="add-button" {{action 'onCancel'}}>Cancel</button>
 
     </div>
   </div>

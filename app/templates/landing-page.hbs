@@ -1,20 +1,22 @@
+<div id="landing-page" class="col-3 col-s-3">
 <header>
   <h1 class = "short-listed">LOGO</h1>
 </header>
 <div>
-{{input class="searchbox" type="search" placeholder='Search Here...'}}
+{{input class="searchbox" value=enteredValue type="search" placeholder='Search Here...' input=(action "search" enteredValue)}}
 </div>
 
-
-{{list-of-users userData = model.userData onToShortlistRoute='onToShortlistRoute'
+{{log users}}
+{{list-of-users userData = users onToShortlist=(action 'onToShortlist' user)
 onClickofUser= 'onClickofUser'
 }}
 <p class = "short-listed footer-text">Shortlisting</p>
-{{log model.userShrtData}}
-{{list-of-users userData = model.userShrtData title = "shortlist" onRmvShortlistRoute='onRmvShortlistRoute'
+
+{{list-of-users userData = shortlistedList title = "shortlist" onToShortlist='onToShortlist'
 onClickofUser= 'onClickofUser'
 }}
 
 <footer>
   <p class = "short-listed footer-text">Copyright Valuelabs LLP</p>
 </footer>
+</div>
